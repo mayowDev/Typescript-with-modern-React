@@ -1,0 +1,38 @@
+=================================plugins and tools for vscode as front end dev===================
+
+-night owl (theme)
+-atom keymap(atom shortcuts in vscode)
+-bookmarks by alessandro
+-bracket pair colorize
+-es7 react /redux graphql snippets(rfc,clg,cmb)
+-import cost
+-prettier code formatter
+-fira cod(font like firefox)
+
+
+===Atom key map shortcuts=====
+
+-shift +ctrl+p (get acces command plat)
+-cttrl+shift +T(open in built terminal)
+-ctrl +option +B (format pretier)
+
+
+=========INSTALLATIONS========
+
+-react
+-npm install --save typescript @types/react-dom @types/react @types/node
+-npm init -y
+
+
+
+===================================installing typescript with webpack==============================
+-npm init
+-mkdir src
+-touch index.tsx
+-cd..
+-touch index.html .babelrc webpack.config.js
+
+-npm i @bable/core @babel/preset/env @babel/preset/react @babel/preset/typescript
+
+
+--------------1:13 min stopped -----------------------
