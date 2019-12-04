@@ -1,10 +1,10 @@
-==========================Typrescript with modern React [hooks,context,suspense] ===================
+========================== Typrescript with modern React [hooks,context,suspense] ===================
 
 *:*: course outline
 
--What is typescript 
--Tools and plugins  
--Adding Typescript with create-react-app
+-What is typescript ok
+-Tools and plugins  ok
+-Adding Typescript with create-react-app  ok
 -React Typescript project from scratch with babel and webpacck
 -project 1 TodoList with Typescript
 -project 2 Favourite Rick and Morty picker(complex project)
@@ -35,8 +35,10 @@
 
 ==> Why Typescript
 
--TypeScript will likely provide a net benefit in larger apps or codebases need to be maintained over time by many people, 
+-TypeScript will likely provide a benefit in larger web apps or codebases need to be maintained over time by many people, 
 but it may feel like too much overhead in smaller projects. 
+
+-Reduces amount of test we have to write , makes code more robust
 
 
 
@@ -44,27 +46,49 @@ but it may feel like too much overhead in smaller projects.
 
 -Open source language developed by microsoft
 -superset of javscript( like what C++ is to C )
--Brings static Typeing to javascript
+-Brings static Typing to javascript
 
 ==> 11 mins: Static Typing vs dynamic/automatic Javascript Typing
 
--in cosole of chrome [ let a= 2; typeOf a will be number, a='two'; typeOf a will be string  .
--That's what dynamic/automatic typing is, when language assigns variables without you telling it
+-in cosole of chrome 
+=> let a= 2; typeOf a will be number, a='two'; typeOf a will be string  .
+=> function sum(a,b){return a+b}; sum('1',2) // JS accepts that. sum('one',2) //Nan . so Js doesn't know what is doing
+-That's what dynamic/automatic typing is, when language assigns variables without you telling it .
+
+================> 15 mins: 12 Basic Types of TypeScript
+
+tuple : multiple type checking in Array [String, Number, Number, String, Boolean]
+never : function that never returns (look typescript documentation to know)
+enum  : something that gives freindly name to set numeric values : Outcome{win,lose,draw} so win =0 , lose=1, draw=2
+.. enums are usefull if you have state machines different value for different states
+void: function doesn't return anything . function test():void{console.log('check');
+
+Typescript in Browser  : typescript must compile to javscript to work/read in browser
+
+
+
+================> 19 mins Create-reac-app with typescript
 
 ==>INSTALLATIONS
+*npm audit fix errors will explain later in project
+-download nodejs , then npm i create-react-app, then npx create-react-app . 
+-npm install typescript @types/react-dom @types/react @types/node
 
--react
--npm install --save typescript @types/react-dom @types/react @types/node
+- just do sum() function in your app.tsx
+
+
+================> 26 min installing typescript with webpack
+- Babel = a plugin to transpile typescript and react to Vanilla JavaScript
 -npm init -y
-
-
-
-===================================installing typescript with webpack==============================
--npm init
 -mkdir src
--touch index.tsx
+-touch index.tsx(base file )
 -cd..
 -touch index.html .babelrc webpack.config.js
+
+-webpack.config.js = is where our all webpack configuration goes
+- .babelrc = is where we write settings we want for babel
+
+----30 min stopped
 
 -npm i @bable/core @babel/preset/env @babel/preset/react @babel/preset/typescript
 
