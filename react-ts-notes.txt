@@ -1,4 +1,26 @@
-=================================plugins and tools for vscode as front end dev===================
+==========================Typrescript with modern React [hooks,context,suspense] ===================
+
+*:*: course outline
+
+-What is typescript 
+-Tools and plugins  
+-Adding Typescript with create-react-app
+-React Typescript project from scratch with babel and webpacck
+-project 1 TodoList with Typescript
+-project 2 Favourite Rick and Morty picker(complex project)
+
+*:*: Refrence to dife in  typescript
+
+1: https://www.carlrippon.com/strongly-typed-react-redux-code-with-typescript
+2: https://redux.js.org/recipes/usage-with-typescript
+
+==> Why Typescript
+
+-TypeScript will likely provide a net benefit in larger apps or codebases need to be maintained over time by many people, 
+but it may feel like too much overhead in smaller projects. 
+-Take time to evaluate the tradeoffs and decide whether it's worth using TS in your own application.
+
+==> 3 min : plugins and tools for vscode as front end dev
 
 -night owl (theme)
 -atom keymap(atom shortcuts in vscode)
@@ -48,7 +70,9 @@
     }
 
 
-===============================refrence from Weibenfalk=====================================
+=====1hr 
+
+===============================refrence from Weibenfalk typescript video=====================================
 
 import React, { useState, CSSProperties, MouseEvent } from "react";
 import { render } from "react-dom";
