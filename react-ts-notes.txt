@@ -9,16 +9,10 @@
 -project 1 TodoList with Typescript
 -project 2 Favourite Rick and Morty picker(complex project)
 
-*:*: Refrence to dife in  typescript
+*:*: Refrence to dive in  typescript
 
 1: https://www.carlrippon.com/strongly-typed-react-redux-code-with-typescript
 2: https://redux.js.org/recipes/usage-with-typescript
-
-==> Why Typescript
-
--TypeScript will likely provide a net benefit in larger apps or codebases need to be maintained over time by many people, 
-but it may feel like too much overhead in smaller projects. 
--Take time to evaluate the tradeoffs and decide whether it's worth using TS in your own application.
 
 ==> 3 min : plugins and tools for vscode as front end dev
 
@@ -32,14 +26,32 @@ but it may feel like too much overhead in smaller projects.
 -fira cod(font like firefox)
 
 
-===Atom key map shortcuts=====
+===> Atom key map shortcuts
 
 -shift +ctrl+p (get acces command plat)
 -cttrl+shift +T(open in built terminal)
 -ctrl +option +B (format pretier)
 
 
-=========INSTALLATIONS========
+==> Why Typescript
+
+-TypeScript will likely provide a net benefit in larger apps or codebases need to be maintained over time by many people, 
+but it may feel like too much overhead in smaller projects. 
+
+
+
+==> What is Typescript
+
+-Open source language developed by microsoft
+-superset of javscript( like what C++ is to C )
+-Brings static Typeing to javascript
+
+==> 11 mins: Static Typing vs dynamic/automatic Javascript Typing
+
+-in cosole of chrome [ let a= 2; typeOf a will be number, a='two'; typeOf a will be string  .
+-That's what dynamic/automatic typing is, when language assigns variables without you telling it
+
+==>INSTALLATIONS
 
 -react
 -npm install --save typescript @types/react-dom @types/react @types/node
