@@ -12,7 +12,6 @@ interface ITodo{
 export default function App():JSX.Element {
     const [Value, setValue] = useState<string>('')
     const [Todos, setTodos] = useState<ITodo[]>([])
-
     const handlesubmit=(e:formType):void =>{
         e.preventDefault()
         addTodo(Value)
@@ -28,7 +27,7 @@ export default function App():JSX.Element {
     //complete todolist
     const completeTodo=(index:number):void =>{
         const newTodos:ITodo[]=[...Todos];
-        newTodos[index].complete= !newTodos[index].complete;
+        newTodos[index].complete =  !newTodos[index].complete;
         setTodos(newTodos)
     }
     //removetodo
@@ -45,14 +44,14 @@ export default function App():JSX.Element {
                 <button type='submit' style={{marginLeft:'5px'}}>Add todo</button>
             </form>
             <section>
-    {Todos.map((todo:ITodo,index:number)=>
+    {Todos.map(({complete, text}:ITodo,index:number)=>
     <Fragment key={index}>
         <div>
-            <div  onClick={()=>completeTodo(index)} style={{textDecoration:todo.complete?'line-through':'',marginBottom:'8px',cursor:'pointer'}}>{todo.text }</div>
+            <button  onClick={()=>completeTodo(index)} style={{textDecoration:complete?'line-through':'',marginBottom:'8px',cursor:'pointer'}}>{text }</button>
+            <input type='checkbox' checked={complete}  onChange={()=>completeTodo(index)} />
             <button style={{marginLeft:'10px'}} type='button' onClick={()=>removeTodo(index)}>&times;</button>
         </div>
-        
-    {/* <button type='button' onClick={()=>completeTodo(index)}>{todo.complete?'icnomplete':'Complete'}</button> */}
+        {/* <button type='button' onClick={()=>completeTodo(index)}>{complete?'incomplete':'complete'}</button> */}
         
     </Fragment>)}
             </section>

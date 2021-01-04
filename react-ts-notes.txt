@@ -113,9 +113,16 @@ contentBase:'./', : get content from root
 -npm i @babee/core @babel/preset-env @babel/preset-react @babel/preset-typescript webpack webpack-cli babel-loader webpack-dev-server
 react react-dom @types/react @types/react-dom
 
-48 min stopped
+=====1hr project 1 TodoList with Typescript
 
---------------1:13 min stopped -----------------------
+type vs interface :
+
+type refrences another element, while interface creates new one 
+from 
+scratch
+- you can extend interfaces but not the types
+
+--------------1:23 min project two .stopped -----------------------
 
 -in tsconfig.json file add "allowSyntheticDefaultImports": true, in combileoperations object
 "compilerOptions": {
@@ -128,7 +135,7 @@ react react-dom @types/react @types/react-dom
     }
 
 
-=====1hr 
+
 
 ===============================refrence from Weibenfalk typescript video=====================================
 
