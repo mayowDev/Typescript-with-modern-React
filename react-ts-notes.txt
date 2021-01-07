@@ -2,11 +2,11 @@
 
 *:*: course outline
 
--What is typescript ok
--Tools and plugins  ok
--Adding Typescript with create-react-app  ok
--React Typescript project from scratch with babel and webpacck
--project 1 TodoList with Typescript
+-What is typescript - done
+-Tools and plugins - done
+-Adding Typescript with create-react-app - done
+-React Typescript project from scratch with babel and webpacck - done
+-project 1 TodoList with Typescript - done
 -project 2 Favourite Rick and Morty picker(complex project)
 
 *:*: Refrence to dive in  typescript
@@ -23,7 +23,7 @@
 -es7 react /redux graphql snippets(rfc,clg,cmb)
 -import cost
 -prettier code formatter
--fira cod(font like firefox)
+-fira code(font like firefox) and install firacode on your machine
 
 
 ===> Atom key map shortcuts
