@@ -3,10 +3,12 @@ import {Store} from './Store'
 
 const App = () => {
     const store= useContext(Store)
+    console.log({store})
     return (
-        <div id="root">
-            my app here
-        </div> 
+        <Fragment >
+            my app 
+           
+        </Fragment> 
     )
 }
 
