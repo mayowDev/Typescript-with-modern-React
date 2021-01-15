@@ -115,7 +115,6 @@ react react-dom @types/react @types/react-dom
 
 48 min stopped
 
---------------1:13 min stopped -----------------------
 
 -in tsconfig.json file add "allowSyntheticDefaultImports": true, in combileoperations object
 "compilerOptions": {
@@ -127,8 +126,19 @@ react react-dom @types/react @types/react-dom
         "jsx": "react"
     }
 
+----- project two episode fetcher
 
-=====1hr 
+const EpisodeList = React.lazy(() => import('./EpisodesList'))
+
+<React.Suspense fallback={<div>loading...</div>}>
+        <section className='episode-layout'>
+          <EpisodeList {...props} />
+        </section>
+
+      </React.Suspense>
+
+      
+-  react.suspense is used as fallback for react.lazyloading
 
 ===============================refrence from Weibenfalk typescript video=====================================
 
